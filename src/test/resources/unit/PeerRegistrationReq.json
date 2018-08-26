@@ -1,0 +1,62 @@
+{
+  "firstname": "Benadryl",
+  "lastname": "Cucumber",
+  "mobileNo": "8976432190",
+  "email": "happypeer@gmail.com",
+  "birthYear": "1995",
+  "idType": "Aadhar",
+  "idValue": "456723457890",
+  "idAttachment": "image.png",
+  "Preferences": [
+    {
+      "PickupPreference": {
+        "zipCode": 543678,
+        "acceptableRange": 5,
+        "acceptableRangeDimension": "Kms",
+        "timeZone": "2007-12-03T10:15:30",
+        "acceptOnTheWay": false
+      },
+      "DeliveryPreference": {
+        "zipCode": 678123,
+        "timeZone": "2007-12-03T20:15:30",
+        "acceptOnTheWay": false
+      },
+      "travellingPattern": "weekdays",
+      "includingHolidays": true,
+      "subscribeToThis": true
+    },
+    {
+      "PickupPreference": {
+        "zipCode": 543678,
+        "timeZone": "2007-12-03T02:15:30",
+        "acceptOnTheWay": false
+      },
+      "DeliveryPreference": {
+        "zipCode": 678123,
+        "acceptableRange": 2,
+        "acceptableRangeDimension": "Kms",
+        "timeZone": "2007-12-03T08:15:30",
+        "acceptOnTheWay": false
+      },
+      "travellingPattern": "weekdays",
+      "includingHolidays": true,
+      "subscribeToThis": true
+    },
+    {
+      "PickupPreference": {
+        "zipCode": 543678,
+        "timeZone": "2007-11-30T20:15:30",
+        "acceptOnTheWay": false
+      },
+      "DeliveryPreference": {
+        "zipCode": 678123,
+        "timeZone": "2007-10-23T20:15:30",
+        "acceptOnTheWay": false
+      },
+      "travellingPattern": "particularDay",
+      "travellingDate": "2007-12-03T20:15:30",
+      "includingHolidays": true,
+      "subscribeToThis": true
+    }
+  ]
+}

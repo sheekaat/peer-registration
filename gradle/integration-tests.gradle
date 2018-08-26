@@ -1,0 +1,26 @@
+sourceSets {
+	intTest {
+		java {
+			compileClasspath += main.output + test.output
+			runtimeClasspath += main.output + test.output
+			srcDir file('src/integration/java')
+			}
+		resources.srcDir file('src/integration/resources')
+	}
+}
+
+configurations {
+	intTestCom.extendsFrom testCompile
+	intTestRtm.extendsFrom testRuntime
+}
+
+dependencies {
+	intTestCom('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
+}
+
+task intTest(type: Test) {
+	testClassesDir = sourceSets.intTest.output.classesDir
+	classpath = sourceSets.intTest.runtimeClasspath
+	
+	reports.html.destination = file("${reporting.baseDir}/${name}")
+}
